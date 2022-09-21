@@ -33,12 +33,22 @@ body{
 }
 
 .relative{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.ticket-container-bottom{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+
+.ticket-container-top{
+    position: absolute;
+    top:20px;
+    right: 0;
+}   
 
 /* HEADER */
 
@@ -64,6 +74,26 @@ header{
 
 /* MAIN */
 
+.image-container:hover .top-image{
+    display:none;
+}
+
+.image-container:hover{
+    cursor: pointer;
+}
+
+.bot-image{
+    display: none;
+}
+
+.image-container:hover .bot-image{
+    display: block;
+}
+
+.image-container:hover .bot-image{
+    display: block;
+}
+
 .price{
     color: red;
     float: left;
@@ -86,6 +116,7 @@ header{
     /* border: 1px dashed black; */
     width: calc(33.3% - 30px);
     margin: 15px;
+    position: relative;
 }
 
 .col-img img{
